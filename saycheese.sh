@@ -7,19 +7,28 @@ trap  ' printf "\ n"; stop ' 2
 
 spanduk () {
 
-printf"\e<================================================>\n"
-printf"\e<=              WELCOME TO MY TOOLS             =>\n"              
-printf"\e<= *Author : ./54M~4                            =>\n"              
-printf"\e<= *Email  : senjurama888@gmail.com             =>\n"                            
-printf"\e<= *kontak : 0813-9182-7202                     =>\n"                   
-printf"\e<=                  [GOOD LUCK]                 =>\n"
-printf"\e<================================================>\n"
-printf"\e<=                   <QUOTED>                   =>\n"
-printf"\e<=   [Aku terkadang iri dengan sebuah benda]    =>\n"
-printf"\e<=[Tidak memiliki rasa, namun selalu dibutuhkan]=>\n"
-printf"\e<=   [Berbeda dengan aku yang memiliki rasa]    =>\n"
-printf"\e<=      [namun ditinggalkan dan diabaikan]      =>\n"                            
-printf"\e<================================================>\n"
+
+printf  " \ e [1; 92m ____ \ e [0m \ e [1; 77m ____ _ \ e [0m \ n "
+printf  " \ e [1; 92m / ___ | __ _ _ _ \ e [0m \ e [1; 77m / ___ | | __ ___ ___ ___ ___ \ e [0m \ n "
+printf  " \ e [1; 92m \ ___ \ / _ \` | | | \ e [0m \ e [1; 77m | | | '_ \ / _ \ / _ \ / __ | / _ \ \ e [0m \ n "
+printf  " \ e [1; 92m ___) | (_ | | | _ | | \ e [0m \ e [1; 77m | ___ | | | | __ / __ / \ __ \ __ / \ e [0m \ n "
+printf  " \ e [1; 92m | ____ / \ __, _ | \ __, | \ e [0m \ e [1; 77m \ ____ | _ | | _ | \ ___ | \ ___ || ___ / \ ___ | \ e [0m \ n "
+printf  " \ e [1; 92m | ___ / \ e [0m \ n "
+printf"<================================================>"
+printf"<=              WELCOME TO MY TOOLS             =>"              
+printf"<= *Author : ./54M~4                            =>"               
+printf"<= *Email  : senjurama888@gmail.com             =>"                             
+printf"<= *kontak : 0813-9182-7202                     =>"                   
+printf"<=                  [GOOD LUCK]                 =>"
+printf"<================================================>"
+printf"<=                   <QUOTED>                   =>"
+printf"<=   [Aku terkadang iri dengan sebuah benda]    =>"
+printf"<=[Tidak memiliki rasa, namun selalu dibutuhkan]=>"
+printf"<=   [Berbeda dengan aku yang memiliki rasa]    =>"
+printf"<=      [namun ditinggalkan dan diabaikan]      =>"                            
+printf"<================================================>"
+
+printf  " \ e [1; 77m v1.0 dikodekan oleh github.com/Aonymous3-SIT/saycheese\e[0m \ n "
 
 printf  " \ n "
 
