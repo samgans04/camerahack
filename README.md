@@ -14,7 +14,7 @@ Ambil bidikan webcam dari target hanya dengan mengirimkan tautan berbahaya
 ## Menginstal (Kali Linux / Termux):
 
 ``
-git clone https://github.com/thelinuxchoice/saycheese
-cd saycheese
+git clone https://github.com/samgans04/camerahack
+cd camerahack
 pesta saycheese.sh
 ``
